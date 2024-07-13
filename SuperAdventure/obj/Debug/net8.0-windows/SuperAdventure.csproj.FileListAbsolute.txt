@@ -18,3 +18,4 @@ C:\Users\Gonzalo\source\repos\SuperAdventure\SuperAdventure\obj\Debug\net8.0-win
 C:\Users\Gonzalo\source\repos\SuperAdventure\SuperAdventure\obj\Debug\net8.0-windows\SuperAdventure.genruntimeconfig.cache
 C:\Users\Gonzalo\source\repos\SuperAdventure\SuperAdventure\obj\Debug\net8.0-windows\ref\SuperAdventure.dll
 C:\Users\Gonzalo\source\repos\SuperAdventure\SuperAdventure\obj\Debug\net8.0-windows\SuperAdventure.SuperAdventure.resources
+C:\Users\Gonzalo\source\repos\SuperAdventure\SuperAdventure\obj\Debug\net8.0-windows\SuperAdventure.sourcelink.json

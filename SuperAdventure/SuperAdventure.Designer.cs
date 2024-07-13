@@ -36,7 +36,21 @@
             lblGold = new Label();
             lblExperiencia = new Label();
             lblNivel = new Label();
-            BtnTest = new Button();
+            BtnUsarArma = new Button();
+            label5 = new Label();
+            cboPociones = new ComboBox();
+            comboBox1 = new ComboBox();
+            button1 = new Button();
+            BtnOeste = new Button();
+            BtnNorte = new Button();
+            BtnEste = new Button();
+            BtnSur = new Button();
+            rtbMensajes = new RichTextBox();
+            rtbUbicacion = new RichTextBox();
+            dgvInventory = new DataGridView();
+            dgvUbicacion = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dgvInventory).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUbicacion).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -110,22 +124,148 @@
             lblNivel.Size = new Size(0, 15);
             lblNivel.TabIndex = 7;
             // 
-            // BtnTest
+            // BtnUsarArma
             // 
-            BtnTest.Location = new Point(189, 197);
-            BtnTest.Name = "BtnTest";
-            BtnTest.Size = new Size(75, 23);
-            BtnTest.TabIndex = 8;
-            BtnTest.Text = "Boton Test";
-            BtnTest.UseVisualStyleBackColor = true;
-            BtnTest.Click += BtnTest_Click;
+            BtnUsarArma.Location = new Point(642, 415);
+            BtnUsarArma.Name = "BtnUsarArma";
+            BtnUsarArma.Size = new Size(75, 23);
+            BtnUsarArma.TabIndex = 8;
+            BtnUsarArma.Text = "Usar Pociones";
+            BtnUsarArma.UseVisualStyleBackColor = true;
+            BtnUsarArma.Click += BtnTest_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(641, 341);
+            label5.Name = "label5";
+            label5.Size = new Size(76, 15);
+            label5.TabIndex = 9;
+            label5.Text = "Select Action";
+            // 
+            // cboPociones
+            // 
+            cboPociones.FormattingEnabled = true;
+            cboPociones.Location = new Point(439, 415);
+            cboPociones.Name = "cboPociones";
+            cboPociones.Size = new Size(121, 23);
+            cboPociones.TabIndex = 10;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(439, 368);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 11;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(641, 368);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 12;
+            button1.Text = "Usar Arma";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // BtnOeste
+            // 
+            BtnOeste.Location = new Point(397, 280);
+            BtnOeste.Name = "BtnOeste";
+            BtnOeste.Size = new Size(75, 23);
+            BtnOeste.TabIndex = 13;
+            BtnOeste.Text = "Oeste";
+            BtnOeste.UseVisualStyleBackColor = true;
+            BtnOeste.Click += BtnOeste_Click;
+            // 
+            // BtnNorte
+            // 
+            BtnNorte.Location = new Point(463, 242);
+            BtnNorte.Name = "BtnNorte";
+            BtnNorte.Size = new Size(75, 23);
+            BtnNorte.TabIndex = 13;
+            BtnNorte.Text = "Norte";
+            BtnNorte.UseVisualStyleBackColor = true;
+            // 
+            // BtnEste
+            // 
+            BtnEste.Location = new Point(538, 280);
+            BtnEste.Name = "BtnEste";
+            BtnEste.Size = new Size(75, 23);
+            BtnEste.TabIndex = 14;
+            BtnEste.Text = "Este";
+            BtnEste.UseVisualStyleBackColor = true;
+            // 
+            // BtnSur
+            // 
+            BtnSur.Location = new Point(463, 316);
+            BtnSur.Name = "BtnSur";
+            BtnSur.Size = new Size(75, 23);
+            BtnSur.TabIndex = 15;
+            BtnSur.Text = "Sur";
+            BtnSur.UseVisualStyleBackColor = true;
+            // 
+            // rtbMensajes
+            // 
+            rtbMensajes.Location = new Point(260, 74);
+            rtbMensajes.Name = "rtbMensajes";
+            rtbMensajes.ReadOnly = true;
+            rtbMensajes.Size = new Size(491, 162);
+            rtbMensajes.TabIndex = 16;
+            rtbMensajes.Text = "";
+            rtbMensajes.TextChanged += rtbMensajes_TextChanged;
+            // 
+            // rtbUbicacion
+            // 
+            rtbUbicacion.Location = new Point(520, 12);
+            rtbUbicacion.Name = "rtbUbicacion";
+            rtbUbicacion.ReadOnly = true;
+            rtbUbicacion.Size = new Size(276, 49);
+            rtbUbicacion.TabIndex = 17;
+            rtbUbicacion.Text = "";
+            // 
+            // dgvInventory
+            // 
+            dgvInventory.AllowUserToAddRows = false;
+            dgvInventory.AllowUserToDeleteRows = false;
+            dgvInventory.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvInventory.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvInventory.Location = new Point(12, 149);
+            dgvInventory.Name = "dgvInventory";
+            dgvInventory.ReadOnly = true;
+            dgvInventory.Size = new Size(240, 116);
+            dgvInventory.TabIndex = 18;
+            // 
+            // dgvUbicacion
+            // 
+            dgvUbicacion.AllowUserToAddRows = false;
+            dgvUbicacion.AllowUserToDeleteRows = false;
+            dgvUbicacion.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvUbicacion.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvUbicacion.Location = new Point(12, 291);
+            dgvUbicacion.Name = "dgvUbicacion";
+            dgvUbicacion.ReadOnly = true;
+            dgvUbicacion.Size = new Size(240, 114);
+            dgvUbicacion.TabIndex = 19;
             // 
             // SuperAdventure
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(BtnTest);
+            Controls.Add(dgvUbicacion);
+            Controls.Add(dgvInventory);
+            Controls.Add(rtbUbicacion);
+            Controls.Add(rtbMensajes);
+            Controls.Add(BtnSur);
+            Controls.Add(BtnEste);
+            Controls.Add(BtnNorte);
+            Controls.Add(BtnOeste);
+            Controls.Add(button1);
+            Controls.Add(comboBox1);
+            Controls.Add(cboPociones);
+            Controls.Add(label5);
+            Controls.Add(BtnUsarArma);
             Controls.Add(lblNivel);
             Controls.Add(lblExperiencia);
             Controls.Add(lblGold);
@@ -136,6 +276,8 @@
             Controls.Add(label1);
             Name = "SuperAdventure";
             Text = "My RP Game";
+            ((System.ComponentModel.ISupportInitialize)dgvInventory).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvUbicacion).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -150,6 +292,18 @@
         private Label lblGold;
         private Label lblExperiencia;
         private Label lblNivel;
-        private Button BtnTest;
+        private Button BtnUsarArma;
+        private Label label5;
+        private ComboBox cboPociones;
+        private ComboBox comboBox1;
+        private Button button1;
+        private Button BtnOeste;
+        private Button BtnNorte;
+        private Button BtnEste;
+        private Button BtnSur;
+        private RichTextBox rtbMensajes;
+        private RichTextBox rtbUbicacion;
+        private DataGridView dgvInventory;
+        private DataGridView dgvUbicacion;
     }
 }

@@ -37,5 +37,15 @@ namespace SuperAdventure
         {
             lblGold.Text = "123";
         }
+
+        private void BtnOeste_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rtbMensajes_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
