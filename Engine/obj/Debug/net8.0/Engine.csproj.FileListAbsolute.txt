@@ -1,0 +1,11 @@
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\bin\Debug\net8.0\Engine.deps.json
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\bin\Debug\net8.0\Engine.dll
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\bin\Debug\net8.0\Engine.pdb
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\Engine.AssemblyInfoInputs.cache
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\Engine.AssemblyInfo.cs
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\Engine.csproj.CoreCompileInputs.cache
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\Engine.dll
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\refint\Engine.dll
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\Engine.pdb
+C:\Users\Gonzalo\source\repos\SuperAdventure\Engine\obj\Debug\net8.0\ref\Engine.dll
