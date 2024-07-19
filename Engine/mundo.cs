@@ -53,29 +53,29 @@ namespace Engine
 
         private static void PopulateItems()
         {
-            Items.Add(new Arma(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
-            Items.Add(new Objeto(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails"));
-            Items.Add(new Objeto(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur"));
-            Items.Add(new Objeto(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs"));
-            Items.Add(new Objeto(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins"));
-            Items.Add(new Arma(ITEM_ID_CLUB, "Club", "Clubs", 3, 10));
-            Items.Add(new PocionDeSalud(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5));
-            Items.Add(new Objeto(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs"));
-            Items.Add(new Objeto(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks"));
-            Items.Add(new Objeto(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
+            Items.Add(new Arma(ITEM_ID_RUSTY_SWORD, "Espada oxidada", "Espadas oxidadas", 0, 5));
+            Items.Add(new Objeto(ITEM_ID_RAT_TAIL, "Cola de rata", "Colas de rata"));
+            Items.Add(new Objeto(ITEM_ID_PIECE_OF_FUR, "Trozo de pelaje", "Trozos de pelaje"));
+            Items.Add(new Objeto(ITEM_ID_SNAKE_FANG, "Colmillo de serpiente", "Colmillos de serpiente"));
+            Items.Add(new Objeto(ITEM_ID_SNAKESKIN, "Piel de serpiente", "Pieles de serpiente"));
+            Items.Add(new Arma(ITEM_ID_CLUB, "Garrote", "Garrotes", 3, 10));
+            Items.Add(new PocionDeSalud(ITEM_ID_HEALING_POTION, "Poción de salud", "Pociones de salud", 5));
+            Items.Add(new Objeto(ITEM_ID_SPIDER_FANG, "Colmillo de araña", "Colmillos de araña"));
+            Items.Add(new Objeto(ITEM_ID_SPIDER_SILK, "Seda de araña", "Sedas de araña"));
+            Items.Add(new Objeto(ITEM_ID_ADVENTURER_PASS, "Pase de aventurero", "Pases de aventurero"));
         }
 
         private static void PopulateMonsters()
         {
-            Monstruo rat = new Monstruo(MONSTER_ID_RAT, "Rat", 5, 3, 10, 3, 3);
+            Monstruo rat = new Monstruo(MONSTER_ID_RAT, "Rata", 5, 3, 10, 3, 3);
             rat.TableroDeItems.Add(new ItemDelBotin(ItemByID(ITEM_ID_RAT_TAIL), 75, false));
             rat.TableroDeItems.Add(new ItemDelBotin(ItemByID(ITEM_ID_PIECE_OF_FUR), 75, true));
 
-            Monstruo snake = new Monstruo(MONSTER_ID_SNAKE, "Snake", 5, 3, 10, 3, 3);
+            Monstruo snake = new Monstruo(MONSTER_ID_SNAKE, "Serpiente", 5, 3, 10, 3, 3);
             snake.TableroDeItems.Add(new ItemDelBotin(ItemByID(ITEM_ID_SNAKE_FANG), 75, false));
             snake.TableroDeItems.Add(new ItemDelBotin(ItemByID(ITEM_ID_SNAKESKIN), 75, true));
 
-            Monstruo giantSpider = new Monstruo(MONSTER_ID_GIANT_SPIDER, "Giant spider", 20, 5, 40, 10, 10);
+            Monstruo giantSpider = new Monstruo(MONSTER_ID_GIANT_SPIDER, "Araña Gigante", 20, 5, 40, 10, 10);
             giantSpider.TableroDeItems.Add(new ItemDelBotin(ItemByID(ITEM_ID_SPIDER_FANG), 75, true));
             giantSpider.TableroDeItems.Add(new ItemDelBotin(ItemByID(ITEM_ID_SPIDER_SILK), 25, false));
 
@@ -87,10 +87,10 @@ namespace Engine
         private static void PopulateQuests()
         {
             Busqueda clearAlchemistGarden =
-                new Busqueda(
-                    QUEST_ID_CLEAR_ALCHEMIST_GARDEN,
-                    "Clear the alchemist's garden",
-                    "Kill rats in the alchemist's garden and bring back 3 rat tails. You will receive a healing potion and 10 gold pieces.", 20, 10);
+        new Busqueda(
+            QUEST_ID_CLEAR_ALCHEMIST_GARDEN,
+            "Limpiar el jardín del alquimista",
+            "Mata ratas en el jardín del alquimista y trae de vuelta 3 colas de rata. Recibirás una poción de salud y 10 piezas de oro.", 20, 10);
 
             clearAlchemistGarden.QuestCompletionItems.Add(new ArticuloDeFinalizacionMision(ItemByID(ITEM_ID_RAT_TAIL), 3));
 
@@ -99,8 +99,8 @@ namespace Engine
             Busqueda clearFarmersField =
                 new Busqueda(
                     QUEST_ID_CLEAR_FARMERS_FIELD,
-                    "Clear the farmer's field",
-                    "Kill snakes in the farmer's field and bring back 3 snake fangs. You will receive an adventurer's pass and 20 gold pieces.", 20, 20);
+                    "Limpiar el campo del agricultor",
+                    "Mata serpientes en el campo del agricultor y trae de vuelta 3 colmillos de serpiente. Recibirás un pase de aventurero y 20 piezas de oro.", 20, 20);
 
             clearFarmersField.QuestCompletionItems.Add(new ArticuloDeFinalizacionMision(ItemByID(ITEM_ID_SNAKE_FANG), 3));
 
@@ -113,28 +113,29 @@ namespace Engine
         private static void PopulateLocations()
         {
             // Create each location
-            Ubicacion home = new Ubicacion(LOCATION_ID_HOME, "Home", "Your house. You really need to clean up the place.");
+            Ubicacion home = new Ubicacion(LOCATION_ID_HOME, "Casa", "Tu casa. Realmente necesitas limpiar el lugar.");
 
-            Ubicacion townSquare = new Ubicacion(LOCATION_ID_TOWN_SQUARE, "Town square", "You see a fountain.");
+            Ubicacion townSquare = new Ubicacion(LOCATION_ID_TOWN_SQUARE, "Plaza del pueblo", "Ves una fuente.");
 
-            Ubicacion alchemistHut = new Ubicacion(LOCATION_ID_ALCHEMIST_HUT, "Alchemist's hut", "There are many strange plants on the shelves.");
+            Ubicacion alchemistHut = new Ubicacion(LOCATION_ID_ALCHEMIST_HUT, "Cabaña del alquimista", "Hay muchas plantas extrañas en los estantes.");
             alchemistHut.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_ALCHEMIST_GARDEN);
 
-            Ubicacion alchemistsGarden = new Ubicacion(LOCATION_ID_ALCHEMISTS_GARDEN, "Alchemist's garden", "Many plants are growing here.");
+            Ubicacion alchemistsGarden = new Ubicacion(LOCATION_ID_ALCHEMISTS_GARDEN, "Jardín del alquimista", "Muchas plantas están creciendo aquí.");
             alchemistsGarden.MonsterLivingHere = MonsterByID(MONSTER_ID_RAT);
 
-            Ubicacion farmhouse = new Ubicacion(LOCATION_ID_FARMHOUSE, "Farmhouse", "There is a small farmhouse, with a farmer in front.");
+            Ubicacion farmhouse = new Ubicacion(LOCATION_ID_FARMHOUSE, "Casa del agricultor", "Hay una pequeña casa de campo, con un agricultor al frente.");
             farmhouse.QuestAvailableHere = QuestByID(QUEST_ID_CLEAR_FARMERS_FIELD);
 
-            Ubicacion farmersField = new Ubicacion(LOCATION_ID_FARM_FIELD, "Farmer's field", "You see rows of vegetables growing here.");
+            Ubicacion farmersField = new Ubicacion(LOCATION_ID_FARM_FIELD, "Campo del agricultor", "Ves filas de vegetales creciendo aquí.");
             farmersField.MonsterLivingHere = MonsterByID(MONSTER_ID_SNAKE);
 
-            Ubicacion guardPost = new Ubicacion(LOCATION_ID_GUARD_POST, "Guard post", "There is a large, tough-looking guard here.", ItemByID(ITEM_ID_ADVENTURER_PASS));
+            Ubicacion guardPost = new Ubicacion(LOCATION_ID_GUARD_POST, "Puesto de guardia", "Hay un guardia grande y fornido aquí.", ItemByID(ITEM_ID_ADVENTURER_PASS));
 
-            Ubicacion bridge = new Ubicacion(LOCATION_ID_BRIDGE, "Bridge", "A stone bridge crosses a wide river.");
+            Ubicacion bridge = new Ubicacion(LOCATION_ID_BRIDGE, "Puente", "Un puente de piedra cruza un ancho río.");
 
-            Ubicacion spiderField = new Ubicacion(LOCATION_ID_SPIDER_FIELD, "Forest", "You see spider webs covering covering the trees in this forest.");
+            Ubicacion spiderField = new Ubicacion(LOCATION_ID_SPIDER_FIELD, "Bosque", "Ves telas de araña cubriendo los árboles en este bosque.");
             spiderField.MonsterLivingHere = MonsterByID(MONSTER_ID_GIANT_SPIDER);
+
 
             // Link the locations together
             home.LocationToNorth = townSquare;

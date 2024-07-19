@@ -61,7 +61,6 @@
             label1.Size = new Size(97, 15);
             label1.TabIndex = 0;
             label1.Text = "Puntos de Golpe:";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -71,7 +70,6 @@
             label2.Size = new Size(30, 15);
             label2.TabIndex = 1;
             label2.Text = "Oro:";
-            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -98,7 +96,6 @@
             lblHitPoints.Name = "lblHitPoints";
             lblHitPoints.Size = new Size(0, 15);
             lblHitPoints.TabIndex = 4;
-            lblHitPoints.Click += label5_Click;
             // 
             // lblGold
             // 
@@ -132,7 +129,6 @@
             BtnUsarArma.TabIndex = 8;
             BtnUsarArma.Text = "Usar Pociones";
             BtnUsarArma.UseVisualStyleBackColor = true;
-            BtnUsarArma.Click += BtnTest_Click;
             // 
             // label5
             // 
@@ -176,7 +172,7 @@
             BtnOeste.TabIndex = 13;
             BtnOeste.Text = "Oeste";
             BtnOeste.UseVisualStyleBackColor = true;
-            BtnOeste.Click += BtnOeste_Click;
+            BtnOeste.Click += btnWest_Click;
             // 
             // BtnNorte
             // 
@@ -186,6 +182,7 @@
             BtnNorte.TabIndex = 13;
             BtnNorte.Text = "Norte";
             BtnNorte.UseVisualStyleBackColor = true;
+            BtnNorte.Click += btnNorth_Click;
             // 
             // BtnEste
             // 
@@ -195,6 +192,7 @@
             BtnEste.TabIndex = 14;
             BtnEste.Text = "Este";
             BtnEste.UseVisualStyleBackColor = true;
+            BtnEste.Click += btnEast_Click;
             // 
             // BtnSur
             // 
@@ -204,6 +202,7 @@
             BtnSur.TabIndex = 15;
             BtnSur.Text = "Sur";
             BtnSur.UseVisualStyleBackColor = true;
+            BtnSur.Click += btnSouth_Click;
             // 
             // rtbMensajes
             // 
@@ -213,7 +212,6 @@
             rtbMensajes.Size = new Size(491, 162);
             rtbMensajes.TabIndex = 16;
             rtbMensajes.Text = "";
-            rtbMensajes.TextChanged += rtbMensajes_TextChanged;
             // 
             // rtbUbicacion
             // 
